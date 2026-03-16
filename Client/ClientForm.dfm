@@ -2,8 +2,8 @@ object ClientPage: TClientPage
   Left = 0
   Top = 0
   Caption = 'Client Form'
-  ClientHeight = 683
-  ClientWidth = 1094
+  ClientHeight = 666
+  ClientWidth = 1088
   Color = clBtnFace
   Constraints.MinHeight = 250
   Constraints.MinWidth = 500
@@ -18,14 +18,15 @@ object ClientPage: TClientPage
   object PnlTop: TPanel
     Left = 0
     Top = 0
-    Width = 1094
+    Width = 1088
     Height = 49
     Align = alTop
     Caption = 'PnlTop'
     ShowCaption = False
     TabOrder = 0
+    ExplicitWidth = 1100
     DesignSize = (
-      1094
+      1088
       49)
     object BtnError: TButton
       Left = 880
@@ -38,7 +39,7 @@ object ClientPage: TClientPage
       OnClick = BtnErrorClick
     end
     object BtnOpenFile: TButton
-      Left = 1007
+      Left = 1001
       Top = 10
       Width = 75
       Height = 25
@@ -46,10 +47,10 @@ object ClientPage: TClientPage
       Anchors = [akTop, akRight]
       Caption = 'Open'
       TabOrder = 1
-      ExplicitLeft = 1001
+      ExplicitLeft = 1013
     end
     object BtnRefresh: TButton
-      Left = 666
+      Left = 660
       Top = 10
       Width = 75
       Height = 23
@@ -57,7 +58,7 @@ object ClientPage: TClientPage
       Caption = 'Refresh'
       TabOrder = 2
       OnClick = BtnRefreshClick
-      ExplicitLeft = 660
+      ExplicitLeft = 672
     end
     object EdtSearch: TEdit
       Left = 8
@@ -120,20 +121,19 @@ object ClientPage: TClientPage
   object PnlClient: TPanel
     Left = 0
     Top = 49
-    Width = 1094
-    Height = 593
+    Width = 1088
+    Height = 576
     Align = alClient
     Caption = 'PnlClient'
     ShowCaption = False
     TabOrder = 1
-    ExplicitTop = 81
-    ExplicitWidth = 1088
-    ExplicitHeight = 544
+    ExplicitWidth = 1100
+    ExplicitHeight = 610
     object DBGridBugs: TDBGrid
       Left = 1
       Top = 1
-      Width = 1092
-      Height = 591
+      Width = 1098
+      Height = 608
       Align = alClient
       DataSource = DSBugs
       TabOrder = 0
@@ -201,20 +201,20 @@ object ClientPage: TClientPage
   end
   object PnlBottom: TPanel
     Left = 0
-    Top = 642
-    Width = 1094
+    Top = 625
+    Width = 1088
     Height = 41
     Align = alBottom
     Caption = 'PnlBottom'
     ShowCaption = False
     TabOrder = 2
-    ExplicitTop = 625
-    ExplicitWidth = 1088
+    ExplicitTop = 659
+    ExplicitWidth = 1100
     DesignSize = (
-      1094
+      1088
       41)
     object LblBugCount: TLabel
-      Left = 721
+      Left = 715
       Top = 13
       Width = 50
       Height = 15
@@ -224,24 +224,24 @@ object ClientPage: TClientPage
       ExplicitLeft = 517
     end
     object BtnPrevious: TButton
-      Left = 905
+      Left = 899
       Top = 6
       Width = 75
       Height = 25
       Action = PreviousPageAction
       Anchors = [akRight, akBottom]
       TabOrder = 0
-      ExplicitLeft = 899
+      ExplicitLeft = 911
     end
     object BtnNext: TButton
-      Left = 1006
+      Left = 1000
       Top = 6
       Width = 75
       Height = 25
       Action = NextPageAction
       Anchors = [akRight, akBottom]
       TabOrder = 1
-      ExplicitLeft = 1000
+      ExplicitLeft = 1012
     end
   end
   object AliClient: TActionList

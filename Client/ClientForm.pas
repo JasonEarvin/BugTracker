@@ -451,47 +451,6 @@ begin
   end;
 end;
 
-//procedure TClientPage.RetrieveBugs;
-//begin
-//  //From Jason
-//  FreeAndNil(BugsList);
-//  BugsListSize := BugsList.Count;
-//  //LoadListView;
-//end;
-
-//procedure TClientPage.LoadListView;
-//var
-//  ListItem : TListItem;
-//  BugIndex : integer;
-//  BugInfo : TBugInfo;
-//  PageStartPos, PageEndPos : integer;
-//begin
-//  LivCurrentBugs.Items.BeginUpdate;
-//
-//  try
-//    LivCurrentBugs.Items.Clear;
-//    PageStartPos := (ListViewPage - 1) * ItemsPerPage + 1;
-//    PageEndPos := Min(ListViewPage * ItemsPerPage, BugsListSize);
-//    LblBugCount.Caption := Format('Showing %d to %d of %d', [PageStartPos, PageEndPos, BugsListSize]);
-//
-//    for BugIndex := PageStartPos - 1 to PageEndPos - 1 do
-//    begin
-//      BugInfo := BugsList.GetBug(BugIndex);
-//
-//      ListItem := LivCurrentBugs.Items.Add;
-//      ListItem.Caption := IntToStr(BugInfo.ID);
-//      ListItem.SubItems.Add(BugInfo.ExceptionMessage);
-//      ListItem.SubItems.Add(BugInfo.MethodName);
-//      ListItem.SubItems.Add(IntToStr(BugInfo.LineNumber));
-//      ListItem.SubItems.Add(DateTimeToStr(BugInfo.DateCreated));
-//      ListItem.SubItems.Add(IntToStr(BugInfo.Priority));
-//      ListItem.Data := BugInfo;
-//    end;
-//  finally
-//    LivCurrentBugs.Items.EndUpdate;
-//  end;
-//end;
-
 procedure TClientPage.OpenDetails(BugInfo: TBugInfo);
 var
   DetailsForm : TDetailedWindow;
