@@ -55,6 +55,7 @@
 *.projdata
 *.tvsconfig
 *.dsk
+*.ini
 
 # Platform output directories
 Win32/

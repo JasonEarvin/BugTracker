@@ -139,16 +139,16 @@ begin
   FConn.DriverName := 'FB';
 
   FConn.Params.Values['Server'] :=
-    FIni.ReadString('Database', 'Server', 'localhost');
+    FIni.ReadString('Database', 'Server', '');
 
   FConn.Params.Values['Database'] :=
     FIni.ReadString('Database', 'Database', '');
 
   FConn.Params.Values['User_Name'] :=
-    FIni.ReadString('Database', 'User', 'SYSDBA');
+    FIni.ReadString('Database', 'User', '');
 
   FConn.Params.Values['Password'] :=
-    FIni.ReadString('Database', 'Password', 'masterkey');
+    FIni.ReadString('Database', 'Password', '');
 
   FConn.LoginPrompt := False;
   FConn.Connected := True;
