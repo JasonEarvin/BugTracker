@@ -1,0 +1,53 @@
+date/time          : 2026-02-23, 19:35:08, 618ms
+computer name      : JASON
+user name          : Jason
+registered owner   : Jasonearvin@outlook.com
+operating system   : Windows 11 x64 build 26200
+system language    : English
+system up time     : 1 hour 35 minutes
+program up time    : 54 seconds
+processors         : 16x AMD Ryzen 7 5800H with Radeon Graphics
+physical memory    : 7101/16236 MB (free/total)
+free disk space    : (C:) 179.38 GB
+display mode       : 1707x1067, 32 bit
+process id         : $4b14
+allocated memory   : 65.49 MB
+largest free block : 122836.45 GB
+executable         : Client.exe
+exec. date/time    : 2026-02-23 19:34
+version            : 1.0.0.0
+compiled with      : Delphi 12
+madExcept version  : 5.2.0
+callstack crc      : $89a40017, $05b89cf4, $739ec267
+exception number   : 1
+exception class    : EReadError
+exception message  : Error reading DataModuleBugAndFilter.OnDestroy: Invalid property value.
+
+main thread ($62c8):
+012f2edd +04d Client.exe   Client            20  +4 initialization
+main thread ($62c8), inner exception level 1:
+>> EReadError, Invalid property value
+00eacf1b +00b Client.exe   System.Classes 11110  +1 PropValueError00ddebac +47c Client.exe   madExcept                HandleException
+00debd55 +055 Client.exe   madExcept                InterceptUnhandledException
+012f2f90 +100 Client.exe   Client            27 +11 initialization
+
+Original Stack: 
+00eaf6be +0ee Client.exe   System.Classes 12130  +5 HandleException
+00eaf9d7 +2a7 Client.exe   System.Classes 12187 +48 TReader.ReadProperty
+00eaf0ae +01e Client.exe   System.Classes 11945  +1 TReader.ReadDataInner
+00eaf03e +03e Client.exe   System.Classes 11932  +5 TReader.ReadData
+00ec27ad +00d Client.exe   System.Classes 17906  +1 TComponent.ReadState
+00eb0611 +361 Client.exe   System.Classes 12369 +37 TReader.ReadRootComponent
+00ea7a79 +039 Client.exe   System.Classes  9542  +3 TStream.ReadComponent
+00e9262f +08f Client.exe   System.Classes  4578  +7 InternalReadComponentRes
+00e9c7dd +08d Client.exe   System.Classes  4851  +4 InitComponent
+00e9c88d +05d Client.exe   System.Classes  4863  +6 InitInheritedComponent
+00ec5169 +099 Client.exe   System.Classes 18847  +6 TDataModule.Create
+010b53f6 +086 Client.exe   Vcl.Forms      13401 +13 TApplication.CreateForm
+012f2edd +04d Client.exe   Client            20  +4 initialization
+7ffb51e9 +012 KERNEL32.DLL                          BaseThreadInitThunk
+7ffb53d0 +027 ntdll.dll                             RtlUserThreadStart
+
+main thread ($62c8), inner exception level 1:
+>> EReadError, Invalid property value
+00eacf1b +00b Client.exe   System.Cla

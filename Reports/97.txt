@@ -1,0 +1,61 @@
+date/time          : 2026-02-22, 18:18:27, 834ms
+computer name      : D13-W11
+wts client name    : TIMS-NUC
+user name          : Tim <admin>
+operating system   : Windows 11 x64 build 26200
+system language    : English
+system up time     : 12 minutes 22 seconds
+program up time    : 12 seconds
+processors         : 4x AMD EPYC 9V74 80-Core Processor
+physical memory    : 6393/16379 MB (free/total)
+free disk space    : (C:) 13.67 GB
+display mode       : 1920x1080, 32 bit
+process id         : $4258
+allocated memory   : 95.02 MB
+largest free block : 122837.50 GB
+executable         : Client.exe
+exec. date/time    : 2026-02-22 18:18
+version            : 1.0.0.0
+compiled with      : Delphi 13
+madExcept version  : 5.2.0
+callstack crc      : $da775772, $b91168e6, $b91168e6
+exception number   : 1
+exception class    : EStringListError
+exception message  : List index out of bounds (0). TStringList is empty.
+
+main thread ($413c):
+007c1a5c +04c Client.exe   ClientForm        92   +3 TClientPage.BtnErrorClick007c24ed +0ed Client.exe   Client            26  +10 initialization
+
+Original Stack: 
+003678e3 +023 Client.exe   System.Classes  7845   +2 TStringList.Get
+007c1a5c +04c Client.exe   ClientForm        92   +3 TClientPage.BtnErrorClick
+00453df6 +0a6 Client.exe   Vcl.Controls    8168   +9 TControl.Click
+00485b26 +026 Client.exe   Vcl.StdCtrls    5985   +3 TCustomButton.Click
+00487442 +022 Client.exe   Vcl.StdCtrls    6630   +1 TCustomButton.CNCommand
+001be721 +041 Client.exe   System         19262  +10 TObject.Dispatch
+004536fa +38a Client.exe   Vcl.Controls    8052 +100 TControl.WndProc
+0045b43b +9cb Client.exe   Vcl.Controls   11302 +178 TWinControl.WndProc
+004854bd +08d Client.exe   Vcl.StdCtrls    5806  +13 TButtonControl.WndProc
+004531cf +02f Client.exe   Vcl.Controls    7820  +10 TControl.Perform
+0045b669 +029 Client.exe   Vcl.Controls   11375  +12 DoControlMsg
+0045c963 +013 Client.exe   Vcl.Controls   11669   +1 TWinControl.WMCommand
+001be721 +041 Client.exe   System         19262  +10 TObject.Dispatch
+004536fa +38a Client.exe   Vcl.Controls    8052 +100 TControl.WndProc
+0045b43b +9cb Client.exe   Vcl.Controls   11302 +178 TWinControl.WndProc
+0045a50a +02a Client.exe   Vcl.Controls   10971   +3 TWinControl.MainWndProc
+00389a13 +023 Client.exe   System.Classes 19134   +8 StdWndProc
+7ffc27a1 +0ea USER32.dll                             SendMessageW
+7ffc27a1 +167 USER32.dll                             CallWindowProcW
+0045b607 +167 Client.exe   Vcl.Controls   11347  +34 TWinControl.DefaultHandler
+004544ac +01c Client.exe   Vcl.Controls    8301   +1 TControl.WMLButtonUp
+001be721 +041 Client.exe   System         19262  +10 TObject.Dispatch
+004536fa +38a Client.exe   Vcl.Controls    8052 +100 TControl.WndProc
+0045b43b +9cb Client.exe   Vcl.Controls   11302 +178 TWinControl.WndProc
+004854bd +08d Client.exe   Vcl.StdCtrls    5806  +13 TButtonControl.WndProc
+0045a50a +02a Client.exe   Vcl.Controls   10971   +3 TWinControl.MainWndProc
+00389a13 +023 Client.exe   System.Classes 19134   +8 StdWndProc
+7ffc27a1 +000 USER32.dll                             DispatchMessageW
+0057f6a0 +130 Client.exe   Vcl.Forms       5144   +0 TApplication.ProcessMessage
+0057f713 +013 Client.exe   Vcl.Forms       5144   +0 TApplication.HandleMessage
+0057fb5a +0ea Client.exe   Vcl.Forms       5144   +0 TApplication.Run
+007c24ed +0ed Client.exe   Client            26  

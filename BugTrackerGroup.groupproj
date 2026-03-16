@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BE102CB6-3B49-47EB-8F3D-83C9029E306F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Server\Server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\BugServerClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BugServerSvc\BugServerSvc.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Server">
+        <MSBuild Projects="Server\Server.dproj"/>
+    </Target>
+    <Target Name="Server:Clean">
+        <MSBuild Projects="Server\Server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Server:Make">
+        <MSBuild Projects="Server\Server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BugServerClient">
+        <MSBuild Projects="Client\BugServerClient.dproj"/>
+    </Target>
+    <Target Name="BugServerClient:Clean">
+        <MSBuild Projects="Client\BugServerClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BugServerClient:Make">
+        <MSBuild Projects="Client\BugServerClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BugServerSvc">
+        <MSBuild Projects="BugServerSvc\BugServerSvc.dproj"/>
+    </Target>
+    <Target Name="BugServerSvc:Clean">
+        <MSBuild Projects="BugServerSvc\BugServerSvc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BugServerSvc:Make">
+        <MSBuild Projects="BugServerSvc\BugServerSvc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Server;BugServerClient;BugServerSvc"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Server:Clean;BugServerClient:Clean;BugServerSvc:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Server:Make;BugServerClient:Make;BugServerSvc:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
